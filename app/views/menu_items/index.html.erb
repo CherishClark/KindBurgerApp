@@ -1,0 +1,9 @@
+<h1>Index Page</h1>
+
+<% @menu_items.each do |item| %>
+  <%=image_tag item.main_image %>
+  <%= item.name %>
+  <%= item.price %>
+  <%= item.category %>
+  <%= item.description %>
+<% end %>
