@@ -1,8 +1,8 @@
 <h1>Index Page</h1>
 
 <% @menu_items.each do |item| %>
-  <%=image_tag item.main_image %>
-  <%= item.name %>
+  <%=image_tag item.main_image unless item.main_image.nil?%>
+  <%= link_to item.name, menu_item_path(item) %>
   <%= item.price %>
   <%= item.category %>
   <%= item.description %>
