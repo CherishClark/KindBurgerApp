@@ -1,5 +1,5 @@
 class MenuItemsController < ApplicationController
-  before_action :set_menu_item, only: [:show]
+  before_action :set_menu_item, only: [:show, :edit, :update]
 
   def index
     @menu_items = MenuItem.all
@@ -17,7 +17,17 @@ class MenuItemsController < ApplicationController
     else
       render :new
     end
+  end
 
+  def edit
+  end
+
+  def update
+    if @menu_item.update(menu_item_params)
+      redirect_to @menu_item, notice: "updated."
+    else
+      render :edit
+    end
   end
 
   private

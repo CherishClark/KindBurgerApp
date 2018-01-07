@@ -1,23 +1,2 @@
 <h1>Create a new menu item</h1>
-<%= form_with(model: @menu_item, local: true) do |f| %>
-
-
-  <div>
-    <%#= f.label :name %>
-    <%#= f.text_field :name %>
-  </div>
-    <%= f.label :category %>
-    <%= f.text_field :category %>
-
-  <div>
-    <%= f.label :price %>
-    <%= f.number_field :price %>
-  </div>
-
-  <div>
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <%= f.submit %>
-<% end %>
+<%= render 'form' %>
