@@ -1,5 +1,5 @@
 class MenuItemsController < ApplicationController
-  before_action :set_menu_item, only: [:show, :edit, :update]
+  before_action :set_menu_item, only: [:show, :edit, :update, :destroy]
 
   def index
     @menu_items = MenuItem.all
@@ -28,6 +28,11 @@ class MenuItemsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @menu_item.destroy
+    redirect_to menu_items_path, notice: "Menu Item deleted"
   end
 
   private
