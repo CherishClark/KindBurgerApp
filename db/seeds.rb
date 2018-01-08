@@ -8,3 +8,7 @@
 end
 
 puts "Created 10 menu items"
+
+User.create!(email: "test@test.com", password:'123456')
+
+puts "created a test user"
