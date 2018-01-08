@@ -3,6 +3,7 @@ class MenuItemsController < ApplicationController
 
   def index
     @menu_items = MenuItem.all
+    @user = User.new
   end
 
   def new
@@ -34,7 +35,7 @@ class MenuItemsController < ApplicationController
     @menu_item.destroy
     redirect_to menu_items_path, notice: "Menu Item deleted"
   end
-
+  
   private
     def set_menu_item
       @menu_item = MenuItem.find(params[:id])

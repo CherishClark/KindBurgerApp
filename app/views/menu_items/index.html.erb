@@ -1,5 +1,12 @@
 <h1>Index Page</h1>
+
+<%= render 'authentication_links' %>
+
+
 <%= link_to "Create New Menu Item", new_menu_item_path %>
+
+     
+
 
 <% @menu_items.each do |item| %>
   <%=image_tag item.main_image unless item.main_image.nil?%>
