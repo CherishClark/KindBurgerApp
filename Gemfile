@@ -61,3 +61,8 @@ gem 'bootstrap', '~> 4.0.0.beta3'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
+gem 'inline_svg', '~> 1.3', '>= 1.3.1'
+
+gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'jquery-ui-rails'
+

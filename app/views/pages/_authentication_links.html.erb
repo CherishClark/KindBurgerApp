@@ -1,0 +1,11 @@
+
+<div class="admin-button-container container"
+>
+<% if logged_in?(:admin) %>
+  <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, class:"admin-button btn-primary" %>
+<% end %>
+
+<%= link_to "Login", new_user_session_path, class:"admin-button btn-primary"%>
+
+<%= link_to "Admin Dashboard", "http://localhost:3000/admin", class:"admin-button btn-primary" %>
+</div>

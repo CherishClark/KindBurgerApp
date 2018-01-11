@@ -1,1 +1,95 @@
-@import "bootstrap";
+/*
+ *= require jquery-ui
+ */
+ @import "bootstrap";
+
+.container {
+  width: 100%;
+}
+
+
+// Menu Index Page
+
+#spy {
+  position:relative;
+}
+
+#logo {
+  width: 200px;
+}
+.menu-container  {
+ display:flex; 
+ flex-flow:wrap;
+ justify-content:center;
+
+}
+
+.card {
+
+  width: 200px
+}
+
+.row {
+  padding:20px;
+}
+
+// Test Login Page
+
+.admin-button-container, {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.admin-button {
+  max-width: 50%;
+}
+
+.cover-slider-container {
+  background-color:green;
+  background-image: url("burger.jpg");
+  background-position: 50% 0;
+  background-size:cover;
+  height: 400px;
+}
+
+.menu-container {
+  background-color:purple;
+  background:cover;
+  height: 400px;
+}
+
+.about-container {
+  background-color:green;
+  background:cover;
+  height: 400px;
+}
+.home-images-container {
+  background-color:purple;
+  background:cover;
+  height: 400px;
+}
+
+.contact-container {
+  background-color:green;
+  background:cover;
+  height: 400px;
+}
+.email-collector-container {
+  background-color:purple;
+  background:cover;
+  height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

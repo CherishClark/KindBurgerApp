@@ -1,19 +1,68 @@
-<h1>Index Page</h1>
 
-<%= render 'authentication_links' %>
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#menu">@menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">@about</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#contact">@contact</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#email">@email</a>
+    </li>
 
+  </ul>
+</nav>
 
+<div class="cover-slider-container container-fluid">
+  <%= image_tag 'KindBurgerFullColorLogo.png', id:"logo" %>
 <%= link_to "Create New Menu Item", new_menu_item_path %>
+  Header
 
-     
+</div>
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0", id="spy">
+  <h4 id="menu">@menu</h4>
+    <div class="menu-container container-fluid ">     
+      <%= render "menu_items" %>
+    </div>
+
+  <h4 id="about">@about</h4>
+    <div class="about-container container-fluid">
+      <%= render 'about' %>
+    </div>
+
+  <h4 id="one">one</h4>
+    <div class="home-images-container container-fluid">
+      more images
+    </div>
+  <h4 id="contact">contact</h4>
+    
+    <div class="contact-container container-fluid">
+      contact
+    </div>
+  <h4 id="email">email</h4>
+    
+    <div class="email-collector-container container-fluid">
+      collect emails here
+    </div>
+</div>
 
 
-<% @menu_items.each do |item| %>
-  <%=image_tag item.main_image unless item.main_image.nil?%>
-  <%= link_to item.name, menu_item_path(item) %>
-  <%= item.price %>
-  <%= item.category %>
-  <%= item.description %>
-  <%= link_to "Edit", edit_menu_item_path(item) %>
-  <%= link_to "Delete", @menu_item, method: :delete, data: {confirm: "are you sure you want to delete this menu item?"} %>
-<% end %>
+
+
+
+
+
+
+
+
+
+
+
+  
+

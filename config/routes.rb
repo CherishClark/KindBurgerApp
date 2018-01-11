@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'testlogin', to: "pages#testlogin"
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :menu_items

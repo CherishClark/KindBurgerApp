@@ -1,5 +1,6 @@
 class MenuItemsController < ApplicationController
   before_action :set_menu_item, only: [:show, :edit, :update, :destroy]
+  access all: [:show, :index], user: {except: [:new, :create, :edit, :update, :destroy]}, admin: :all
 
   def index
     @menu_items = MenuItem.all

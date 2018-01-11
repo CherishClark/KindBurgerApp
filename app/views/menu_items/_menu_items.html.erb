@@ -1,0 +1,14 @@
+<% @menu_items.each do |item| %>
+  <div class="menu-item-row row" >
+    <div class="col-md-6">
+      <div class="menu-item-container card">
+        <div><%= link_to item.name, menu_item_path(item) %></div>
+        <div><%= item.price %></div>
+        <div><%= item.category %></div>
+        <div><%= item.description %></div>
+        <div><%= link_to "Edit", edit_menu_item_path(item) %></div>
+        <div><%= link_to "Delete", @menu_item, method: :delete, data: {confirm: "are you sure you want to delete this menu item?"} %> </div>
+      </div>
+    </div>
+  </div>
+<% end %>
