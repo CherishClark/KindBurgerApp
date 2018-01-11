@@ -3,12 +3,19 @@
  */
  @import "bootstrap";
 
-.container {
+.container-fluid, .container {
   width: 100%;
+  padding: 0px;
 }
 
 
 // Menu Index Page
+
+#menu-image {
+
+  width: 100%;
+  height: auto;
+}
 
 #spy {
   position:relative;
