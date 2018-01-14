@@ -1,0 +1,15 @@
+
+<div id="burgers-container"> 
+  <h2 id="burger-header"> BURGERS </h2>
+    <% @menu_items.each do |item| %>
+      <% if item.category == "burgers" %>
+       <ul class="card menu-item">
+        <li class="menu-name"><%=item.name %></li>
+        <li class="menu-price" ><%= item.price %></li>
+        <li class="menu-description" ><%= item.description %></li>
+  <!--       <div><%#= link_to "Edit", edit_menu_item_path(item) %></div>
+        <div><%#= link_to "Delete", @menu_item, method: :delete, data: {confirm: "are you sure you want to delete this menu item?"} %> </div> -->
+      </ul>
+      <% end %>
+    <% end %>
+</div>

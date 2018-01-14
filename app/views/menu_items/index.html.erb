@@ -1,55 +1,48 @@
-<%= image_tag 'KindBurgerFullColorLogo.png', id:"logo" %>
-
-<nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#menu">@menu</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#about">@about</a>
-    </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#contact">@contact</a>
-    </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#email">@email</a>
-    </li>
-
-  </ul>
-</nav>
-
-<div class="cover-slider-container container-fluid">
-
-<%= link_to "Create New Menu Item", new_menu_item_path %>
-  Header
-
+<div class="cover-slider-container container-fluid" id="head">
+  <%= render 'nav' %>
 </div>
 
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0", id="spy">
-  <h4 id="menu">@menu</h4>
-    <div class="menu-container container-fluid "> 
-      <%= image_tag 'fullMenu.jpg', id:"menu-image" %>
-      <%#= render "menu_items" %>
+
+    <div class="menu-container container-fluid" id='menu-container'> 
+
+        <div class="col-md-8">
+          <%= render "burgers" %>
+        </div>
+        <div class="col-md-4">
+          <%= render 'fries' %>
+          <%= render 'desserts' %>
+        </div>
+
+        <%= link_to "Create New Menu Item", new_menu_item_path %>
+  <!--       <div class="col-md-6">
+  
+        </div> -->
     </div>
 
+  <div class="parallax-filler">
+  </div>
+
   <h4 id="about">@about</h4>
-    <div class="about-container container-fluid">
+    <div class="container-fluid" id="about-container">
       <%= render 'about' %>
     </div>
 
-  <h4 id="one">one</h4>
-    <div class="home-images-container container-fluid">
-      more images
-    </div>
+
+  <div class="parallax-filler">
+  </div>
+
   <h4 id="contact">contact</h4>
     
-    <div class="contact-container container-fluid">
+    <div class="container-fluid" id="contact-container" >
       contact
     </div>
+
+  <div class="parallax-filler">
+  </div>
+
   <h4 id="email">email</h4>
     
-    <div class="email-collector-container container-fluid">
+    <div class="container-fluid" id="email-collector-container">
       collect emails here
     </div>
 </div>
