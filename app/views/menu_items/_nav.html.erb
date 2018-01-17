@@ -1,9 +1,12 @@
 <div id="navbar">
-  <ul>
-   <li class="">Home</li>
-   <li class="">Menu</li>
-   <li class="">About</li>
-   <li class="">Contact</li>
+  <ul id="ul-logo">
+    <li> <%= image_tag 'KindBurgerFullColorLogo.png', id:'logo' %></li>
+  </ul>
+  <ul id="ul-nav-menu">
+   <li class=""><%= link_to 'Home', root_path %></li>
+   <li class=""><%= link_to 'Menu', root_path %></li>
+   <li class=""><%= link_to 'Contact', root_path %></li>
+   <li class=""><%= link_to 'Donate', root_path %></li>
  </ul>
 
 </div>

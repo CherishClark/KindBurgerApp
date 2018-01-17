@@ -4,19 +4,15 @@
 
 
     <div class="menu-container container-fluid" id='menu-container'> 
-
-        <div class="col-md-8">
-          <%= render "burgers" %>
-        </div>
-        <div class="col-md-4">
-          <%= render 'fries' %>
+      <h2 id="burger-header"> BURGERS </h2>
+        <%= render "burgers" %>
+      <h2 id="fries-header"> FRIES </h2>
+         <%= render 'fries' %>
+      <h2 id="desserts-header"> SHAKES </h2>
           <%= render 'desserts' %>
-        </div>
+
 
         <%= link_to "Create New Menu Item", new_menu_item_path %>
-  <!--       <div class="col-md-6">
-  
-        </div> -->
     </div>
 
   <div class="parallax-filler">

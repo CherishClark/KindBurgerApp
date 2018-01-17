@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'testlogin', to: "pages#testlogin"
+  get 'donate', to: "pages#static"
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users

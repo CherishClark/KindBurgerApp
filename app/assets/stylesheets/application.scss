@@ -5,18 +5,23 @@
   // prince: #604860 #604860 KB #8a275d,: #b0d76c: #b0d76c
 
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Frijole');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Walter+Turncoat');
 
 
 body {
   position:relative;
-  font-family: "Bowlby One Sc", sans-serif;
+  font-family: "Walter Turncoat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rock Salt", sans-serif;
 }
 .container-fluid, .container {
   width: 100%;
   padding: 0px;
 
 }
+
 
 
 // social media test
@@ -28,7 +33,7 @@ body {
  // nav bar
 
  #navbar{
-  // background-color: rgba( 189, 189, 189,0.73);
+  background: linear-gradient(#d2d2d2cc, transparent);
   display:inline-block;
   position:fixed;
   color: white;
@@ -41,8 +46,18 @@ body {
  #navbar ul {
   display:flex;
   list-style-type: none;
-  float:right;
+ }
+
+ #ul-nav-menu {
+  float: right;
   margin: 10px 40px 10px 0px;
+ }
+
+ #ul-logo {
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
  }
 
 
@@ -55,7 +70,8 @@ body {
 // Home Page
 
 #logo {
-  width: 200px;
+  width: 100px;
+  height: auto;
 }
 
 .cover-slider-container {
@@ -119,6 +135,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  justify-content: center;
 }
 
 .menu-item {
@@ -140,10 +157,11 @@ body {
 
 .menu-name {
   margin-right: 35px;
+
 }
 
 .menu-name, .menu-price {
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Rock Salt", sans-serif;
   font-size: 1.3em;
   text-shadow: 0px 2px 2px black;
   color: #604860;
@@ -203,7 +221,63 @@ body {
 }
 // end of test login page
 
+// donation page
 
+.donation-container {
+  background-image: url('cow.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-size:cover;
+  height: 800px;
+  color:white;
+
+
+}
+#call-to-action {
+  padding-top: 70px;
+  text-align:center;
+
+}
+.call-to-action-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align: center;
+  color:white;
+}
+
+#donate-menu-buttons {
+ 
+  display:flex;
+  flex-wrap:flex;
+  font-size:2em;
+ 
+}
+
+#donate-menu-buttons div {
+  margin-top: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#donate-menu-buttons a {
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color:#b0d76c;
+  border-radius: 2px;
+  width: 150px;
+  color:#b0d76c;
+  background-color: #00000096;
+}
+
+#donate-menu-buttons a:hover {
+  background-color: #4B384C;
+  color:#c6c9ca;
+  border-color: #c6c9ca;
+  text-decoration:none;
+  font-style:none;
+}
 
 
 
